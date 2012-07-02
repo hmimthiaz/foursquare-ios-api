@@ -1,0 +1,248 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D79C6D15A1C7BE00BC94F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D79C6C15A1C7BE00BC94F8 /* Foundation.framework */; };
+		08D79C7315A1C7BE00BC94F8 /* BZFoursquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D79C7215A1C7BE00BC94F8 /* BZFoursquare.m */; };
+		08D79C7E15A1C7F600BC94F8 /* BZFoursquareRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D79C7C15A1C7F600BC94F8 /* BZFoursquareRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D79C7F15A1C7F600BC94F8 /* BZFoursquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D79C7D15A1C7F600BC94F8 /* BZFoursquareRequest.m */; };
+		08D79C8115A1C98300BC94F8 /* BZFoursquare.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D79C7115A1C7BE00BC94F8 /* BZFoursquare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D79C8215A1C98900BC94F8 /* BZFoursquare-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 08D79C7015A1C7BE00BC94F8 /* BZFoursquare-Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08D79C6915A1C7BE00BC94F8 /* libBZFoursquare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBZFoursquare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D79C6C15A1C7BE00BC94F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08D79C7015A1C7BE00BC94F8 /* BZFoursquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BZFoursquare-Prefix.pch"; sourceTree = "<group>"; };
+		08D79C7115A1C7BE00BC94F8 /* BZFoursquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZFoursquare.h; sourceTree = "<group>"; };
+		08D79C7215A1C7BE00BC94F8 /* BZFoursquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZFoursquare.m; sourceTree = "<group>"; };
+		08D79C7C15A1C7F600BC94F8 /* BZFoursquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquareRequest.h; sourceTree = "<group>"; };
+		08D79C7D15A1C7F600BC94F8 /* BZFoursquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquareRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08D79C6615A1C7BE00BC94F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D79C6D15A1C7BE00BC94F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D79C5E15A1C7BE00BC94F8 = {
+			isa = PBXGroup;
+			children = (
+				08D79C6E15A1C7BE00BC94F8 /* BZFoursquare */,
+				08D79C6B15A1C7BE00BC94F8 /* Frameworks */,
+				08D79C6A15A1C7BE00BC94F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08D79C6A15A1C7BE00BC94F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08D79C6915A1C7BE00BC94F8 /* libBZFoursquare.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08D79C6B15A1C7BE00BC94F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08D79C6C15A1C7BE00BC94F8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08D79C6E15A1C7BE00BC94F8 /* BZFoursquare */ = {
+			isa = PBXGroup;
+			children = (
+				08D79C7C15A1C7F600BC94F8 /* BZFoursquareRequest.h */,
+				08D79C7D15A1C7F600BC94F8 /* BZFoursquareRequest.m */,
+				08D79C7115A1C7BE00BC94F8 /* BZFoursquare.h */,
+				08D79C7215A1C7BE00BC94F8 /* BZFoursquare.m */,
+				08D79C6F15A1C7BE00BC94F8 /* Supporting Files */,
+			);
+			path = BZFoursquare;
+			sourceTree = "<group>";
+		};
+		08D79C6F15A1C7BE00BC94F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08D79C7015A1C7BE00BC94F8 /* BZFoursquare-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08D79C6715A1C7BE00BC94F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D79C8115A1C98300BC94F8 /* BZFoursquare.h in Headers */,
+				08D79C7E15A1C7F600BC94F8 /* BZFoursquareRequest.h in Headers */,
+				08D79C8215A1C98900BC94F8 /* BZFoursquare-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08D79C6815A1C7BE00BC94F8 /* BZFoursquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08D79C7615A1C7BE00BC94F8 /* Build configuration list for PBXNativeTarget "BZFoursquare" */;
+			buildPhases = (
+				08D79C6515A1C7BE00BC94F8 /* Sources */,
+				08D79C6615A1C7BE00BC94F8 /* Frameworks */,
+				08D79C6715A1C7BE00BC94F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BZFoursquare;
+			productName = BZFoursquare;
+			productReference = 08D79C6915A1C7BE00BC94F8 /* libBZFoursquare.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08D79C6015A1C7BE00BC94F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 08D79C6315A1C7BE00BC94F8 /* Build configuration list for PBXProject "BZFoursquare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08D79C5E15A1C7BE00BC94F8;
+			productRefGroup = 08D79C6A15A1C7BE00BC94F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08D79C6815A1C7BE00BC94F8 /* BZFoursquare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08D79C6515A1C7BE00BC94F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D79C7315A1C7BE00BC94F8 /* BZFoursquare.m in Sources */,
+				08D79C7F15A1C7F600BC94F8 /* BZFoursquareRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08D79C7415A1C7BE00BC94F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08D79C7515A1C7BE00BC94F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08D79C7715A1C7BE00BC94F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BZFoursquare.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BZFoursquare/BZFoursquare-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		08D79C7815A1C7BE00BC94F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BZFoursquare.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BZFoursquare/BZFoursquare-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D79C6315A1C7BE00BC94F8 /* Build configuration list for PBXProject "BZFoursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D79C7415A1C7BE00BC94F8 /* Debug */,
+				08D79C7515A1C7BE00BC94F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08D79C7615A1C7BE00BC94F8 /* Build configuration list for PBXNativeTarget "BZFoursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D79C7715A1C7BE00BC94F8 /* Debug */,
+				08D79C7815A1C7BE00BC94F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08D79C6015A1C7BE00BC94F8 /* Project object */;
+}

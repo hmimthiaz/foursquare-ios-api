@@ -24,43 +24,38 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "BZFoursquareRequest.h"
 
-@protocol BZFoursquareRequestDelegate;
+@protocol BZFoursquareSessionDelegate;
 
-@interface BZFoursquareRequest : NSObject {
-    NSString            *path_;
-    NSString            *HTTPMethod_;
-    NSDictionary        *parameters_;
-    id<BZFoursquareRequestDelegate> delegate_;
-    NSURLConnection     *connection_;
-    NSMutableData       *responseData_;
-    NSDictionary        *meta_;
-    NSArray             *notifications_;
-    NSDictionary        *response_;
+@interface BZFoursquare : NSObject  {
+    NSString    *clientID_;
+    NSString    *callbackURL_;
+    NSString    *version_;
+    NSString    *locale_;
+    id<BZFoursquareSessionDelegate> __unsafe_unretained sessionDelegate_;
+    NSString    *accessToken_;
 }
-@property(nonatomic,copy,readonly) NSString *path;
-@property(nonatomic,copy,readonly) NSString *HTTPMethod;
-@property(nonatomic,copy,readonly) NSDictionary *parameters;
-@property(nonatomic,assign) id<BZFoursquareRequestDelegate> delegate;
-// responses
-@property(nonatomic,copy,readonly) NSDictionary *meta;
-@property(nonatomic,copy,readonly) NSArray *notifications;
-@property(nonatomic,copy,readonly) NSDictionary *response;
+@property(nonatomic,copy,readonly) NSString *clientID;
+@property(nonatomic,copy,readonly) NSString *callbackURL;
+@property(nonatomic,copy) NSString *version; // YYYYMMDD
+@property(nonatomic,copy) NSString *locale;  // en (default), fr, de, it, etc.
+@property(nonatomic,unsafe_unretained) id<BZFoursquareSessionDelegate> sessionDelegate;
+@property(nonatomic,copy) NSString *accessToken;
 
-+ (NSURL *)baseURL;
+- (id)initWithClientID:(NSString *)clientID callbackURL:(NSString *)callbackURL;
 
-- (id)initWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod parameters:(NSDictionary *)parameters delegate:(id<BZFoursquareRequestDelegate>)delegate;
+- (BOOL)startAuthorization;
+- (BOOL)handleOpenURL:(NSURL *)url;
+- (void)invalidateSession;
+- (BOOL)isSessionValid;
 
-- (void)start;
-- (void)cancel;
+- (BZFoursquareRequest *)requestWithPath:(NSString *)path HTTPMethod:(NSString *)HTTPMethod parameters:(NSDictionary *)parameters delegate:(id<BZFoursquareRequestDelegate>)delegate;
 
 @end
 
-@protocol BZFoursquareRequestDelegate <NSObject>
+@protocol BZFoursquareSessionDelegate <NSObject>
 @optional
-- (void)requestDidStartLoading:(BZFoursquareRequest *)request;
-- (void)requestDidFinishLoading:(BZFoursquareRequest *)request;
-- (void)request:(BZFoursquareRequest *)request didFailWithError:(NSError *)error;
+- (void)foursquareDidAuthorize:(BZFoursquare *)foursquare;
+- (void)foursquareDidNotAuthorize:(BZFoursquare *)foursquare error:(NSDictionary *)errorInfo;
 @end
-
-FOUNDATION_EXPORT NSString * const BZFoursquareErrorDomain;
