@@ -6,3 +6,4 @@ FSQDemo/FSQDemo.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
 FSQDemo/FSQDemo.xcodeproj/xcuserdata/*.xcuserdatad
 
 FSQDemo/Demo.xcworkspace/xcuserdata/
+*.svn*
