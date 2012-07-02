@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0896398315A1CAC2009EFDBC /* libBZFoursquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0896398215A1CAC2009EFDBC /* libBZFoursquare.a */; };
 		674BDDA01460CE0200320FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674BDD9F1460CE0200320FF0 /* UIKit.framework */; };
 		674BDDA21460CE0200320FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674BDDA11460CE0200320FF0 /* Foundation.framework */; };
 		674BDDA41460CE0200320FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674BDDA31460CE0200320FF0 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0896398215A1CAC2009EFDBC /* libBZFoursquare.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libBZFoursquare.a; path = "../src/build/Release-iphoneos/libBZFoursquare.a"; sourceTree = "<group>"; };
 		674BDD9B1460CE0200320FF0 /* FSQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		674BDD9F1460CE0200320FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		674BDDA11460CE0200320FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0896398315A1CAC2009EFDBC /* libBZFoursquare.a in Frameworks */,
 				674BDDA41460CE0200320FF0 /* CoreGraphics.framework in Frameworks */,
 				674BDDA21460CE0200320FF0 /* Foundation.framework in Frameworks */,
 				674BDDEF14614ED500320FF0 /* MobileCoreServices.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		674BDD9E1460CE0200320FF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0896398215A1CAC2009EFDBC /* libBZFoursquare.a */,
 				674BDDA31460CE0200320FF0 /* CoreGraphics.framework */,
 				674BDDA11460CE0200320FF0 /* Foundation.framework */,
 				674BDDEE14614ED500320FF0 /* MobileCoreServices.framework */,
@@ -265,6 +269,7 @@
 				GCC_PREFIX_HEADER = "FSQDemo/FSQDemo-Prefix.pch";
 				INFOPLIST_FILE = "FSQDemo/FSQDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -278,6 +283,7 @@
 				GCC_PREFIX_HEADER = "FSQDemo/FSQDemo-Prefix.pch";
 				INFOPLIST_FILE = "FSQDemo/FSQDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${TARGET_BUILD_DIR}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
